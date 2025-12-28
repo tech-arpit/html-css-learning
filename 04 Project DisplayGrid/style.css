@@ -9,41 +9,39 @@ main{
     background-color: black;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 70px 1fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+     grid-template-areas: "top-left top-center top-right"
+                          "top-left center bottom-right"
+                          "bottom-left bottom-left bottom-right"
+    ;  
+    padding: 10px;
+    gap: 20px;
 
-    grid-template-areas: "header header header"
-                         "section section section"
-                         "div-left bottom-up div-right"
-                         "div-left bottom-down div-right"
-                         ;
-padding: 10px;
- gap: 10px;
 }
-header{
+
+.top-left{
+    background-color: green;
+    grid-area: top-left;
+}
+.top-center{
     background-color: aqua;
-    grid-area: header;
+    grid-area: top-center;
+ 
+}
+.top-right{
+    background-color: yellow;
+    grid-area: top-right;
+}
+.center{
+    background-color: red;
+    grid-area:center;
 
 }
-section{
-    background-color: lightgreen;
-    grid-area: section;
-
-
+.bottom-left{
+    background-color: blue;
+    grid-area:bottom-left;
 }
-.div-left{
-    background-color: lightpink;
-    grid-area: div-left;
-
-}
-.div-right{
-    background-color: rgb(6, 50, 65);
-    grid-area: div-right;
-}
-.bottom-up{
-    background-color: lightgray;
-    grid-area: bottom-up;
-}
-.bottom-down{
-    background-color: lightcoral;
-    grid-area: bottom-down;
+.bottom-right{
+    background-color: purple;
+    grid-area: bottom-right;
 }
