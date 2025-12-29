@@ -1,0 +1,55 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+html, body{
+    height: 100%;
+    width:100%;
+
+}
+
+main{
+    height:100%;
+    display: flex;
+    gap: 10px;
+   
+    
+section{
+        background-size: cover;
+        background-position: center;
+        height:100%;
+        flex-grow: 1;
+        transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+        cursor: pointer;
+    }
+
+    section:hover{
+        flex-grow: 3;
+    }
+
+    section:nth-child(1){
+        background-image: url(./wind\ hashira.jpg);
+    }
+    section:nth-child(2){
+        background-image: url(./Obanai\ iguro.jpg);
+
+    }
+    section:nth-child(3){
+        background-image: url(./TANJIRO\ KAMADO.jpg);
+    }
+    section:nth-child(4){
+        background-image: url(./⚝•\ \ Muichiro\ Tokito\ 𖥣𖡡\ ᴬᴵ.jpg);
+    }
+    section:nth-child(5){
+        background-image: url(./✰Tengen\ -\ Demon\ Slayer.jpg);
+    }
+    section:nth-child(6){
+        background-image: url(./download.jpg);
+    }
+   
+
+}
+   
+
