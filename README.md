@@ -1,2 +1,2 @@
-# Frontend-mini-projects
-Learning Frontend
+# html-css-learning
+Learning html css
